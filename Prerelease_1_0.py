@@ -108,38 +108,6 @@ class Game:
             self.board.new_cards(self.deck.take_cards(3))
             return (None)
 
-    # def com_play(self):
-    #
-    #     set_exists = False
-    #     for set_card in itertools.combinations(self.board.cards, 3):
-    #         if set_chec(*set_card, False):
-    #             set_exists = True
-    #             computer_set = set_card
-    #             break
-    #     if not set_exists:
-    #         if self.deck.is_empty_deck():
-    #             if self.player_point > self.computer_point:
-    #                 print('winner winner chiken dinner')
-    #                 self.who_won = 'you won'
-    #             elif game.player_point == game.computer_point:
-    #                 print('tay')
-    #                 self.who_won = 'tay'
-    #             else:
-    #                 print('you los')
-    #                 self.who_won = 'you lost'
-    #             return False,False
-    #         else:
-    #             self.board.new_cards(self.deck.take_cards(3))
-    #             return False,True
-    #     else:
-    #         print(computer_set)
-    #         old_index = self.board.smart_remove(computer_set)
-    #         if len(self.board.cards) < 12:
-    #
-    #             self.board.smart_new_cards(self.deck.take_cards(3),old_index)
-    #         self.computer_point += 1
-    #         return True, True
-
     def random_time(self):
         x = 1
         y = 3
